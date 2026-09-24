@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Farm Market",
+    "slug": "farm-market",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "farmmarket",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.farmmarket.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Farm Market uses your camera to scan the collection QR code at pickup.",
+        "NSLocationWhenInUseUsageDescription": "Farm Market uses your location to show nearby markets and to place a pin when you add a new market.",
+        "NSPhotoLibraryUsageDescription": "Farm Market uses your photo library so producers can add product and profile photos."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Farm Market uses your camera to scan the collection QR code at pickup."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Farm Market uses your location to show nearby markets and to place a pin when you add a new market."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Farm Market uses your photo library so producers can add product and profile photos."
+        }
+      ]
+    ]
+  }
+}
